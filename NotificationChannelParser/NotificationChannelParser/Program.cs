@@ -15,7 +15,6 @@ namespace NotificationParserApp
             TestNotificationParsing("[BE][QA][HAHA][Urgent] there is error");
             TestNotificationParsing("[FE][Urgent][QA] New feature deployed");
 
-            // Prevent console from closing immediately
             Console.ReadLine();
         }
 
@@ -52,7 +51,7 @@ namespace NotificationParserApp
                 }
             }
 
-            // Display the result
+            
             Console.WriteLine("Receive channels: " + string.Join(", ", orderedChannels));
         }
     }
